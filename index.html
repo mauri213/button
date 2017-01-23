@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mauri'z Button</title>
+	<title>Contact</title>
+	<style type="text/css">
+		body {
+ 			background: #000050; 
+ 			font-family: arial;
+ 			color: #ffa500;
+		}
+
+		form {
+ 			position: relative;
+ 			top: 40px;
+ 			border-radius: 4px;
+ 			width: 400px;
+ 			height: 180px;
+ 			margin: 0 auto;
+		}
+
+		form textarea {
+ 			border-radius: 2px;
+ 			box-shadow:  0px 2px 11px 0px rgba(0, 0, 0, 0.3);
+ 			border: 1px solid #e2e6e6;
+ 			margin: 10px 0 10px 0;
+ 			font-family: arial;
+ 			outline: none;
+ 			width: 395px;
+ 			height: 100px;
+		}
+
+		button {
+			color: #000050;
+			background-color: #ffa500;
+			border: none;
+			float: right;
+}
+	</style>
 </head>
 <body>
 	<form method="POST" action="">
-		<legend>
-			<label for="suam">Send Us A Message</label>
-		</legend>
-		<textarea name="fivehundred" id="fivehundred"></textarea>
-      	<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			<label>Send Us A Message</label>
+		<textarea minlength="5" maxlength="500" placeholder="Please type your message here"></textarea>
+      	<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
 	</form>
 </body>
 </html>
