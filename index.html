@@ -39,9 +39,15 @@
 </head>
 <body>
 	<form method="POST" action="">
-			<label>Send Us A Message</label>
-		<textarea minlength="5" maxlength="500" placeholder="Please type your message here"></textarea>
+		<label>Send Us A Message</label>
+		<textarea name="message" minlength="5" maxlength="500" placeholder="Please type your message here" onkeyup="counter(this);"></textarea>
       	<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
+	<div id="counter_div">0/500</div>
 	</form>
+	<script type="text/javascript">
+    function counter(msg){
+        document.getElementById('counter_div').innerHTML = msg.value.length+'/500';
+    }
+    </script>
 </body>
 </html>
